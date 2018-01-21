@@ -30,7 +30,7 @@ Un lenguaje de programación es un medio que se utiliza para construir las órde
 
 Los lenguajes de programación se clasifican de acuerdo a la cercanía con el lenguaje propio de las máquinas (binario) en *lenguajes de bajo nivel* (los más próximos al binario) y *lenguajes de alto nivel* (los más próximos al lenguaje humano).
 
-<img src="./images/programmingLanguage.png", width="250"/>
+![niveles de programación](./images/programmingLanguageS.png)
 
 ## Processing
 
