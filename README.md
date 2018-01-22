@@ -51,12 +51,45 @@ Los lenguajes de programación se clasifican de acuerdo a la cercanía con el le
 ### Mecánica de juego
 
 A medida que transcurran las lecciones encontrarás nuevos retos que pondrán en juego diferentes habilidades que debes desarrollar solo o trabajando en equipo - recuerda que programar no solo se trata de escribir código. Verás cómo mientras aprendes a programar te convertirás en
-- _HACKER_ <img src="./images/medalHacker_10.png", width="50"/>: Un maestro del desarrollo de código.
-- _PIONEER_ <img src="./images/medalPioneer_10.png", width="50"/>: La mente más creativa e innovadora.
-- _ACHIEVER_ <img src="./images/medalAchiever_10.png", width="50"/>: Aceptarás cualquier reto con tal de conseguir el mayor puntaje.
-- _HERO_ <img src="./images/medalHero_10.png", width="50"/>: El más noble ser humano que no permitirá que nadie se quede atrás.
+- _HACKER_ <img src="./images/medalHacker_10.png" width="50"/>: Un maestro del desarrollo de código.
+- _PIONEER_ <img src="./images/medalPioneer_10.png" width="50"/>: La mente más creativa e innovadora.
+- _ACHIEVER_ <img src="./images/medalAchiever_10.png" width="50"/>: Aceptarás cualquier reto con tal de conseguir el mayor puntaje.
+- _HERO_ <img src="./images/medalHero_10.png" width="50"/>: El más noble ser humano que no permitirá que nadie se quede atrás.
 
 Podrás concentrarte alcanzar el máximo nivel en uno de estos roles o podrás desarrollar habilidades de todos que te hagan un programador con capacidad de ocupar cualquier roll que sea necesario. El juego se desarrollará en cuatro etapas, para superar cada etapa deberás alcanzar mínimo 60 puntos que acumularas ganando medallas de cualquiera de los roles.
+
+#### MISIÓN AVATAR
+<img src="./images/medalPioneer_1.png" width="100"/>
+<img src="./images/medalAchiever_1.png" width="100"/>
+<img src="./images/medalHero_1.png" width="100"/>
+
+Utilizando una herramienta como [avatarmaker][12] desarrolla tu propio avatar con fondo transparente. Recibirás estas tres medallas personalizadas.
+
+### [Dirígite a la lección 1 - Dibujando con pixels][13]
+
+En esta lección aprenderás conocerás la interface de trabajo de processing y aprenderás a dibujar usando el sistema de coordenadas así como los diferentes modelos de color que puedes utilizar en processing.
+
+#### MISIÓN MARTIN GARDNER
+
+Lee atentemante [este artículo][14] sobre el teorema de los cuatro colores.
+
+Resolverás el [mapa de Martin Gardner][16] y le mostrarás a tus compañeros tu solución después crearás en processing el mapa más complejo que se te ocurra, el tamaño lo decides tu así como el número de regiones que utilizarás y la fórma de estas regiones.
+
+<img src="./images/medalHacker_3.png" width="100"/>
+
+Recibirás 3 puntos _HACKER_ desarrollando esta misión.
+
+<img src="./images/medalPioneer_5.png" width="100"/>
+<img src="./images/medalAchiever_5.png" width="100"/>
+
+Recibirás 5 puntos _PIONEER_ y 5 puntos _ACHIEVER_ si utilizas las funciones [`vertex`][15] para diseñar tu mapa.
+
+Este es un ejemplo de lo que puedes hacer con estas Funciones
+<img src="./images/Four_Colour_Map_Example.png" title="Based on a this raster image by chas zzz brown on en.wikipedia.">
+
+<img src="./images/medalHero_3.png" width="100"/>
+
+Recibirás 1 punto _HERO_ por cada compañero a quien ayudes y lo certifique. Ten en cuenta que estos puntos serán descontados a tus compañeros.
 
 [1]: https://youtu.be/J3xmvmtBQ2I
 [2]: https://es.wikipedia.org/wiki/Algoritmo
@@ -70,3 +103,7 @@ Podrás concentrarte alcanzar el máximo nivel en uno de estos roles o podrás d
 [10]: https://processing.org/download/
 [11]: https://es.wikipedia.org/wiki/Sistema_operativo
 [12]: http://avatarmaker.com/
+[13]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/a268c36d548b58d190db37db49712128f60228ff/Leccion_1.ipynb
+[14]: https://es.wikipedia.org/wiki/Teorema_de_los_cuatro_colores
+[15]: https://processing.org/reference/
+[16]: https://www.geogebra.org/m/NQnmR3CK
