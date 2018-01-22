@@ -54,11 +54,7 @@ A medida que transcurran las lecciones encontrarás nuevos retos que pondrán en
 - _HACKER_ <img src="./images/medalHacker_10.png" width="50"/>: Un maestro del desarrollo de código.
 - _PIONEER_ <img src="./images/medalPioneer_10.png" width="50"/>: La mente más creativa e innovadora.
 - _ACHIEVER_ <img src="./images/medalAchiever_10.png" width="50"/>: Aceptarás cualquier reto con tal de conseguir el mayor puntaje.
-<<<<<<< HEAD
 - _HERO_ <img src="./images/medalHero_10.png" width="50"/>: El más noble ser humano que no permitirá que nadie se quede atrás.
-=======
-- _HERO_ <img src="./images/medalHero_10.png", width="50"/>: El más noble ser humano que no permitirá que nadie se quede atrás.
->>>>>>> a268c36d548b58d190db37db49712128f60228ff
 
 Podrás concentrarte alcanzar el máximo nivel en uno de estos roles o podrás desarrollar habilidades de todos que te hagan un programador con capacidad de ocupar cualquier roll que sea necesario. El juego se desarrollará en cuatro etapas, para superar cada etapa deberás alcanzar mínimo 60 puntos que acumularas ganando medallas de cualquiera de los roles.
 
