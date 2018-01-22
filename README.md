@@ -2,7 +2,7 @@
 
 ## Introducción
 
-### ¿Por qué es programar?
+### ¿Por qué programar?
 
 Tal vez alguna vez has utilizado un computador, o tal vez un *smart phone* o cualquier dispositivo tecnológico, si es así entonces habrás utilizado los resultados del trabajo de algún hacker que programó dicha tecnología. Si te gusta la tecnología entenderás por qué debes aprender a programar ya que si y solo si sabes programar podrás participar en el desarrollo de la tecnología que construye el futuro - *"Todos sabemos cómo será el futuro pero casi nadie se pregunta cómo haremos realidad ese futuro"* [**David Cuartielles**][1]. Y si no estas pensando en ser ingeniero, científico o hacker ¿por qué deberías aprender a programar? la respuesta es simple pero no fácil - aprender a programar va a contribuir para que tu cerebro desarrolle nuevos circuitos sinápticos que mejorarán tus capacidades de razonamiento lógico, estructurado y ordenado, también se desarrollará tu intuición, serás más crítico y evaluarás más rápidamente los errores que presentes en tus razonamientos y en los razonamientos de tus interlocutores. Programar no es una tarea que deba aprender únicamente quien tenga interés en la tecnología o las ciencias es un deber de todo ciudadano crítico y conciente de su sociedad. Aprenderás también cuál es la diferencia entre ser un usuario de la tecnología y dejarse usar por ésta.
 
