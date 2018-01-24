@@ -103,7 +103,7 @@ Recibirás 1 punto _HERO_ por cada compañero a quien ayudes y lo certifique. Te
 [10]: https://processing.org/download/
 [11]: https://es.wikipedia.org/wiki/Sistema_operativo
 [12]: http://avatarmaker.com/
-[13]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/a268c36d548b58d190db37db49712128f60228ff/Leccion_1.ipynb
+[13]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/0fac0d6e695c329407f20267b7e0c131727983f1/Leccion_1.ipynb
 [14]: https://es.wikipedia.org/wiki/Teorema_de_los_cuatro_colores
 [15]: https://processing.org/reference/
 [16]: https://www.geogebra.org/m/NQnmR3CK
