@@ -56,7 +56,7 @@ A medida que transcurran las lecciones encontrarás nuevos retos que pondrán en
 - _ACHIEVER_ <img src="./images/medalAchiever_10.png" width="50"/>: Aceptarás cualquier reto con tal de conseguir el mayor puntaje.
 - _HERO_ <img src="./images/medalHero_10.png" width="50"/>: El más noble ser humano que no permitirá que nadie se quede atrás.
 
-Podrás concentrarte alcanzar el máximo nivel en uno de estos roles o podrás desarrollar habilidades de todos que te hagan un programador con capacidad de ocupar cualquier roll que sea necesario. El juego se desarrollará en cuatro etapas, para superar cada etapa deberás alcanzar mínimo 60 puntos que acumularas ganando medallas de cualquiera de los roles.
+Podrás concentrarte en alcanzar el máximo nivel en uno de estos roles o desarrollar habilidades de todos que te hagan un programador con capacidad de ocupar cualquier roll que sea necesario. El juego se desarrollará en cuatro etapas, para superar cada etapa deberás alcanzar mínimo 60 puntos que acumularas ganando medallas de cualquiera de los roles.
 
 #### MISIÓN AVATAR
 <img src="./images/medalPioneer_1.png" width="100"/>
@@ -75,9 +75,9 @@ Lee atentemante [este artículo][14] sobre el teorema de los cuatro colores.
 
 Resolverás el [mapa de Martin Gardner][16] y le mostrarás a tus compañeros tu solución después crearás en processing el mapa más complejo que se te ocurra, el tamaño lo decides tu así como el número de regiones que utilizarás y la fórma de estas regiones.
 
-<img src="./images/medalHacker_3.png" width="100"/>
+<img src="./images/medalHacker_10.png" width="100"/>
 
-Recibirás 3 puntos _HACKER_ desarrollando esta misión.
+Recibirás 10 puntos _HACKER_ desarrollando esta misión.
 
 <img src="./images/medalPioneer_5.png" width="100"/>
 <img src="./images/medalAchiever_5.png" width="100"/>
@@ -87,9 +87,13 @@ Recibirás 5 puntos _PIONEER_ y 5 puntos _ACHIEVER_ si utilizas las funciones [`
 Este es un ejemplo de lo que puedes hacer con estas Funciones
 <img src="./images/Four_Colour_Map_Example.png" title="Based on a this raster image by chas zzz brown on en.wikipedia.">
 
-<img src="./images/medalHero_3.png" width="100"/>
+<img src="./images/medalHero_1.png" width="100"/>
 
 Recibirás 1 punto _HERO_ por cada compañero a quien ayudes y lo certifique. Ten en cuenta que estos puntos serán descontados a tus compañeros.
+
+Tus compañeros evaluarán la complejidad de tu mapa, el mapa que reciba más puntos (el más complejo) recibirá el mismo número de puntos _HACKER_.
+
+Tus compañeros votarán por cuál es el mapa más creativo, el mapa que reciba más puntos (el más creativo) recibirá el mismo número de puntos _PIONEER_.
 
 [1]: https://youtu.be/J3xmvmtBQ2I
 [2]: https://es.wikipedia.org/wiki/Algoritmo
