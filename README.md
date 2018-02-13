@@ -65,7 +65,7 @@ Podrás concentrarte en alcanzar el máximo nivel en uno de estos roles o desarr
 
 Utilizando una herramienta como [avatarmaker][12] desarrolla tu propio avatar con fondo transparente. Recibirás estas tres medallas personalizadas.
 
-### [Dirígite a la lección 1 - Dibujando con pixels][13]
+### [Dirígete a la lección 1 - Dibujando con pixels][13]
 
 En esta lección aprenderás conocerás la interface de trabajo de processing y aprenderás a dibujar usando el sistema de coordenadas así como los diferentes modelos de color que puedes utilizar en processing.
 
@@ -95,6 +95,12 @@ Tus compañeros evaluarán la complejidad de tu mapa, el mapa que reciba más pu
 
 Tus compañeros votarán por cuál es el mapa más creativo, el mapa que reciba más puntos (el más creativo) recibirá el mismo número de puntos _PIONEER_.
 
+### [Dirígete a la lección 2 - Variables][17]
+
+En este lección aprenderás hacerca de la manipulación de variables ¿qué son? ¿cómo se crean? ¿qué tipos de variables existen? y también aprenderás a interactuar con tus sketch mediante el teclado y el mouse. Al final de la lección encontrarás un ejercicio con tres preguntas que debes responder para evaluar tu aprendizaje.
+
+<img src="./images/medalHacker_10.png" width="100"/>
+
 [1]: https://youtu.be/J3xmvmtBQ2I
 [2]: https://es.wikipedia.org/wiki/Algoritmo
 [3]: https://es.wikipedia.org/wiki/Background
@@ -111,3 +117,4 @@ Tus compañeros votarán por cuál es el mapa más creativo, el mapa que reciba 
 [14]: https://es.wikipedia.org/wiki/Teorema_de_los_cuatro_colores
 [15]: https://processing.org/reference/
 [16]: https://www.geogebra.org/m/NQnmR3CK
+[17]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/452057650f59b9076036dd4795ad724361c39961/Leccion_2.ipynb
