@@ -104,7 +104,7 @@ En este lección aprenderás hacerca de la manipulación de variables ¿qué son
 ### [Dirígete a la lección 3 - Condicionales][18]
 En esta lección aprenderás cómo hacer para que tus sketch tomen decisiones mediante el uso de declaraciones y operadores condicionales `if` y variables booleanas.
 
-#### Misión Revota
+#### Misión Rebota
 Tu misión será desarrollar tu primer juego. En este juego una esfera empezará a moverse en una dirección aleatoria por el tablero y cada vez que toque alguno de los bordes del lienzo el `Background` cambiará a color rojo, la finalidad del juego será no permitir que la elipse toque los bordes del lienzo para lo cual el jugador tendrá que dar click dentro de la elipse para que esta cambie la dirección del movimiento de forma aleatoria y a una velocidad aleatoria también.
 
 En [este vídeo][19] puede ver una demostración de cómo debe funcionar tu juego.
