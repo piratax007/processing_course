@@ -101,6 +101,19 @@ En este lección aprenderás hacerca de la manipulación de variables ¿qué son
 
 <img src="./images/medalHacker_10.png" width="100"/>
 
+### [Dirígete a la lección 3 - Condicionales][18]
+En esta lección aprenderás cómo hacer para que tus sketch tomen decisiones mediante el uso de declaraciones y operadores condicionales `if` y variables booleanas.
+
+#### Misión Revota
+Tu misión será desarrollar tu primer juego. En este juego una esfera empezará a moverse en una dirección aleatoria por el tablero y cada vez que toque alguno de los bordes del lienzo el `Background` cambiará a color rojo, la finalidad del juego será no permitir que la elipse toque los bordes del lienzo para lo cual el jugador tendrá que dar click dentro de la elipse para que esta cambie la dirección del movimiento de forma aleatoria y a una velocidad aleatoria también.
+
+En [este vídeo][19] puede ver una demostración de cómo debe funcionar tu juego.
+
+Recuerda que no es necesario correr en busca de ayuda, lo que has aprendido hasta ahora es más que suficiente para que tengas éxito en esta misión, sin embargo, si necesitas ayuda, recuerda que tienes a tu profesor y a tus compañeros en los foros de discusión del aula para que puedas preguntarles todo lo que necesites.
+
+Al desarrollar esta misión conseguirás 30 puntos Hacker.
+3x<img src="./images/medalHacker_10.png" width="100"/>
+
 [1]: https://youtu.be/J3xmvmtBQ2I
 [2]: https://es.wikipedia.org/wiki/Algoritmo
 [3]: https://es.wikipedia.org/wiki/Background
@@ -118,3 +131,5 @@ En este lección aprenderás hacerca de la manipulación de variables ¿qué son
 [15]: https://processing.org/reference/
 [16]: https://www.geogebra.org/m/NQnmR3CK
 [17]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/452057650f59b9076036dd4795ad724361c39961/Leccion_2.ipynb
+[18]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/969a5caab4890da58326819c36d3e99862147d1a/Leccion_3.ipynb
+[19]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/demo_juego_1.mkv?raw=true
