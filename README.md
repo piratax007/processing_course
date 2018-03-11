@@ -114,6 +114,24 @@ Recuerda que no es necesario correr en busca de ayuda, lo que has aprendido hast
 Al desarrollar esta misión conseguirás 30 puntos Hacker.
 3x<img src="./images/medalHacker_10.png" width="100"/>
 
+### [Dirígete a la lección 4 - bucles][20]
+
+#### Misión color
+
+Tu misión será desarrollar un sketch estático que corresponde a una cuadríacula, tu decides el tamaño de cada cuadro pero el lienzo debe ser mínimo de 500x500 pixels. Esta cuadrícula tendrá que pintarse con un degradado de color desde el centro (mas oscuro) hasta los bordes del lienzo (más claro).
+
+Obtendrás
+
+<img src="./images/medalHacker_10.png" width="100"/> y <img src="./images/medalPioneer_10.png" width="100"/> si pintas tu cuadrícula con un degradado de negro (en el centro) a blanco (en los bordes).
+
+2x<img src="./images/medalHacker_10.png" width="100"/>, 2x<img src="./images/medalPioneer_10.png" width="100"/> y <img src="./images/medalAchiever_10.png" width="100"/> si pintas tu cuadríacula con un degradado de un color (rojo, verde o azaul).
+
+3x<img src="./images/medalHacker_10.png" width="100"/> 3x<img src="./images/medalPioneer_10.png" width="100"/> y 2x<img src="./images/medalAchiever_10.png" width="100"/> si pintas tu cuadrícula con un degradado de dos colores.
+
+4x<img src="./images/medalHacker_10.png" width="100"/>, 4x<img src="./images/medalPioneer_10.png" width="100"/> y 3x<img src="./images/medalAchiever_10.png" width="100"/> si pintas tu cuadrícula con un degradado de tres colores.
+
+5x<img src="./images/medalHacker_10.png" width="100"/>, 5x<img src="./images/medalPioneer_10.png" width="100"/> y 4x<img src="./images/medalAchiever_10.png" width="100"/> si haces un sketch dinámico que cambien el centro del degradado de tres colores de acuerdo a la posición del mouse en el lienzo.
+
 [1]: https://youtu.be/J3xmvmtBQ2I
 [2]: https://es.wikipedia.org/wiki/Algoritmo
 [3]: https://es.wikipedia.org/wiki/Background
@@ -133,3 +151,4 @@ Al desarrollar esta misión conseguirás 30 puntos Hacker.
 [17]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/452057650f59b9076036dd4795ad724361c39961/Leccion_2.ipynb
 [18]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/969a5caab4890da58326819c36d3e99862147d1a/Leccion_3.ipynb
 [19]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/demo_juego_1.mkv?raw=true
+[20]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/4a0287a793b7f76c4092d4755669ec1754502af1/Leccion_4.ipynb
