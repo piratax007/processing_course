@@ -1,3 +1,10 @@
+/* Ejemplo if
+Mg. Fausto M. Lagos S
+CC By-NC-SA 4.0
+
+Una elipse se mueve horizontalmente y rebota en los bordes del lienzo
+*/
+
 boolean state = true;
 int x = 35;
 int r = 35;
