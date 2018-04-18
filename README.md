@@ -20,7 +20,7 @@ Lo que has hecho es
 3. Depurar tu algoritmo
 por lo tanto lo que has hecho es **programar** tu cerebro para que ejecute los pasos necesarios para que tengas los dientes límpios.
 
-Si desarrollaste el ejercicio anterior estas ahora en capacidad de comprender que programar no tiene que ver con desarrollar código e incluso no tiene que ver con la tecnología, tiene que ver con **pensar**. Aparentemente siempre pensamos, pero eso no es muy cierto, por lo general dejamos que sea nuestro cerebro quien tome decisiones que se ejecutan completamente en [segundo plano][3] y de las cuales no somos concientes. Programar es hacerse conciente de un problema y los pasos necesarios para resolverlo eficientemente y esto exige una alta disposición para pensar de manera muy estructurada.
+Si desarrollaste el ejercicio anterior estas ahora en capacidad de comprender que programar no tiene que ver con desarrollar código e incluso no tiene que ver con la tecnología, tiene que ver con **pensar**. Aparentemente siempre pensamos, pero eso no es muy cierto, por lo general dejamos que sea nuestro cerebro el que tome decisiones que se ejecutan completamente en [segundo plano][3] y de las cuales no somos concientes. Programar es hacerse conciente de un problema y los pasos necesarios para resolverlo eficientemente y esto exige una alta disposición para pensar de manera muy estructurada.
 
 Programar no es una tarea fácil, es una tarea exigente que pondrá un jaque tu tolerancia al fracaso pero descubrirás que la satisfacción de conseguir la solución de un problema es más grande que cualquier sacrificio hecho para encontrarla, aprenderás que el esfuerzo, la dedicación y disciplina son los pasos que debes dar para conseguir el éxito y son los escudos que te defienden de la mediocridad.
 
@@ -32,9 +32,14 @@ Los lenguajes de programación se clasifican de acuerdo a la cercanía con el le
 
 ![niveles de programación](./images/programmingLanguageS.png)
 
+Dos conceptos fundamentales que debes aprender con plena claridad son
+
+- **Sintaxis** es el orden lógico, la estructura del lenguaje de programación. Todo lenguaje tiene una sintaxis, un ejemplo simple: en español dices _"el auto color rojo"_ no _"el auto rojo color"_, el orden de las palabras determina su correcta _sintaxis_.
+- **Semántica** es el significado de lo que dices o escribes, así puedes decir _"el resplandeciente corpúsculo de brillante amanecer sobresale bajo las olas de impregnante sonido"_ lo cual puede que se escuche "bonito" pero carece de todo significado. Un lenguaje de programación tiene semántica y si lo que escribes no tiene significado, la máquina no podrá ejecutarlo.
+
 ## Processing
 
-[Processing][5] es un [lenguaje de programación][6] basado en [Java][7] orientado a artístas y diseñadores gráficos. Ha tenido un gran impacto en la educación como lenguaje de aprendizaje. Es [Software Libre][8] [multiplataforma][9] por tanto puede ser utilizado en GNU / Linux, MACOS o MS Windows sin diferencia. Desde [processing.org][10] puede descargarse el instalador para cualquiera de estos [sistemas operativos][11].
+[Processing][5] es un [lenguaje de programación][6] basado en [Java][7] orientado a artístas y diseñadores gráficos. Ha tenido un gran impacto en la educación como lenguaje de aprendizaje. Es [Software Libre][8] [multiplataforma][9] por tanto puede ser utilizado en GNU / Linux, MacOS o MS Windows sin diferencia. Desde [processing.org][10] puede descargarse el instalador para cualquiera de estos [sistemas operativos][11].
 
 ### ¿Qué aprenderé?
 
@@ -48,89 +53,55 @@ Los lenguajes de programación se clasifican de acuerdo a la cercanía con el le
   1. Funciones
   2. Objetos
 
-### Mecánica de juego
+### Mecánica del curso
 
-A medida que transcurran las lecciones encontrarás nuevos retos que pondrán en juego diferentes habilidades que debes desarrollar solo o trabajando en equipo - recuerda que programar no solo se trata de escribir código. Verás cómo mientras aprendes a programar te convertirás en
-- _HACKER_ <img src="./images/medalHacker_10.png" width="50"/>: Un maestro del desarrollo de código.
-- _PIONEER_ <img src="./images/medalPioneer_10.png" width="50"/>: La mente más creativa e innovadora.
-- _ACHIEVER_ <img src="./images/medalAchiever_10.png" width="50"/>: Aceptarás cualquier reto con tal de conseguir el mayor puntaje.
-- _HERO_ <img src="./images/medalHero_10.png" width="50"/>: El más noble ser humano que no permitirá que nadie se quede atrás.
-
-Podrás concentrarte en alcanzar el máximo nivel en uno de estos roles o desarrollar habilidades de todos que te hagan un programador con capacidad de ocupar cualquier roll que sea necesario. El juego se desarrollará en cuatro etapas, para superar cada etapa deberás alcanzar mínimo 60 puntos que acumularas ganando medallas de cualquiera de los roles.
-
-#### MISIÓN AVATAR
-<img src="./images/medalPioneer_1.png" width="100"/>
-<img src="./images/medalAchiever_1.png" width="100"/>
-<img src="./images/medalHero_1.png" width="100"/>
-
-Utilizando una herramienta como [avatarmaker][12] desarrolla tu propio avatar con fondo transparente. Recibirás estas tres medallas personalizadas.
+A medida que transcurran las lecciones encontrarás nuevos retos que pondrán en juego diferentes habilidades que debes desarrollar. Programar te exigirá utilizar tu cerebro al máximo y debes estar dispuesto a invertir tiempo y ser paciente para obtener los resultados deseados. Programar mejorará tus niveles de disciplina y aceptación de la frustración.
 
 ### [Dirígete a la lección 1 - Dibujando con pixels][13]
 
-En esta lección aprenderás conocerás la interface de trabajo de processing y aprenderás a dibujar usando el sistema de coordenadas así como los diferentes modelos de color que puedes utilizar en processing.
+En esta lección conocerás el IDE processing y aprenderás a dibujar usando el sistema de coordenadas así como los diferentes modelos de color que puedes utilizar en processing. Aprovecha para darte una pasada por [la referencia de processing][15] y aprender cómo esta organizada la documentación, aprender a leer la documentación es fundamental ya que te permitirá conocer el lenguaje con el que estás desarrollando y además encontrar fácilmente las herramientas que estas buscando para tus sketch.
 
 #### MISIÓN MARTIN GARDNER
 
-Lee atentemante [este artículo][14] sobre el teorema de los cuatro colores.
+Ahora que has aprendido cómo dibujar con processing lee atentemante [este artículo][14] sobre el teorema de los cuatro colores. Para hacerte una idea más clara sobre la misión que tienes resuelve el [mapa de Martin Gardner][16] después crearás en processing el mapa más complejo que se te ocurra, el tamaño lo decides tu así como el número de regiones que utilizarás y la fórma de estas regiones.
 
-Resolverás el [mapa de Martin Gardner][16] y le mostrarás a tus compañeros tu solución después crearás en processing el mapa más complejo que se te ocurra, el tamaño lo decides tu así como el número de regiones que utilizarás y la fórma de estas regiones.
-
-<img src="./images/medalHacker_10.png" width="100"/>
-
-Recibirás 10 puntos _HACKER_ desarrollando esta misión.
-
-<img src="./images/medalPioneer_5.png" width="100"/>
-<img src="./images/medalAchiever_5.png" width="100"/>
-
-Recibirás 5 puntos _PIONEER_ y 5 puntos _ACHIEVER_ si utilizas las funciones [`vertex`][15] para diseñar tu mapa.
-
-Este es un ejemplo de lo que puedes hacer con estas Funciones
-<img src="./images/Four_Colour_Map_Example.png" title="Based on a this raster image by chas zzz brown on en.wikipedia.">
-
-<img src="./images/medalHero_1.png" width="100"/>
-
-Recibirás 1 punto _HERO_ por cada compañero a quien ayudes y lo certifique. Ten en cuenta que estos puntos serán descontados a tus compañeros.
-
-Tus compañeros evaluarán la complejidad de tu mapa, el mapa que reciba más puntos (el más complejo) recibirá el mismo número de puntos _HACKER_.
-
-Tus compañeros votarán por cuál es el mapa más creativo, el mapa que reciba más puntos (el más creativo) recibirá el mismo número de puntos _PIONEER_.
+![Sarah Suárez](./images/Mapas/Sarah_Suarez.jpg)
 
 ### [Dirígete a la lección 2 - Variables][17]
 
-En este lección aprenderás hacerca de la manipulación de variables ¿qué son? ¿cómo se crean? ¿qué tipos de variables existen? y también aprenderás a interactuar con tus sketch mediante el teclado y el mouse. Al final de la lección encontrarás un ejercicio con tres preguntas que debes responder para evaluar tu aprendizaje.
-
-<img src="./images/medalHacker_10.png" width="100"/>
+En este lección aprenderás hacerca de la manipulación de variables ¿qué son? ¿cómo se crean? ¿qué tipos de variables existen? y también aprenderás a interactuar con tus sketch mediante el teclado y el mouse.
 
 ### [Dirígete a la lección 3 - Condicionales][18]
 En esta lección aprenderás cómo hacer para que tus sketch tomen decisiones mediante el uso de declaraciones y operadores condicionales `if` y variables booleanas.
 
 #### Misión Rebota
-Tu misión será desarrollar tu primer juego. En este juego una esfera empezará a moverse en una dirección aleatoria por el tablero y cada vez que toque alguno de los bordes del lienzo el `Background` cambiará a color rojo, la finalidad del juego será no permitir que la elipse toque los bordes del lienzo para lo cual el jugador tendrá que dar click dentro de la elipse para que esta cambie la dirección del movimiento de forma aleatoria y a una velocidad aleatoria también.
+Tu misión será desarrollar tu primer juego. En este juego una esfera empezará a moverse en una dirección aleatoria por el tablero y cada vez que toque alguno de los bordes del lienzo el `Background` cambiará a color rojo, la finalidad del juego será no permitir que la elipse toque los bordes del lienzo para lo cual el jugador tendrá que dar click dentro de la elipse (_te será útil determinar la distancia entre el puntero del mouse y el centro de la elipse, busca en la referencia de processing la función `dist()`_) para que esta cambie la dirección del movimiento de forma aleatoria y a una velocidad también aleatoria.
 
-En [este vídeo][19] puede ver una demostración de cómo debe funcionar tu juego.
+En [este vídeo][19] puedes ver una demostración de cómo debe funcionar tu juego.
 
-Recuerda que no es necesario correr en busca de ayuda, lo que has aprendido hasta ahora es más que suficiente para que tengas éxito en esta misión, sin embargo, si necesitas ayuda, recuerda que tienes a tu profesor y a tus compañeros en los foros de discusión del aula para que puedas preguntarles todo lo que necesites.
-
-Al desarrollar esta misión conseguirás 30 puntos Hacker.
-3x<img src="./images/medalHacker_10.png" width="100"/>
+Después de que resuelvas tu misión puedes comparar tu código con [este ejemplo][22], recuerda que a programar se aprende "leyendo mucho código y escribiendo mucho código" tal como dice [Richard Stallman][23].
 
 ### [Dirígete a la lección 4 - bucles][20]
 
+En esta lección aprenderás a hacer más eficiente tu código mediante el uso de bucles, ya no tendrás que escribir muchas veces la misma línea de código cambiando apenas algunos parámetros, con los bucles vas a reducir la cantidad de código que escribes así será más legible para otros, porque estará mejor organizado y optimizado.
+
 #### Misión color
 
-Tu misión será desarrollar un sketch estático que corresponde a una cuadríacula, tu decides el tamaño de cada cuadro pero el lienzo debe ser mínimo de 500x500 pixels. Esta cuadrícula tendrá que pintarse con un degradado de color desde el centro (mas oscuro) hasta los bordes del lienzo (más claro).
+Tu misión será desarrollar una cuadrícula con degradado tal como la siguiente.
 
-Obtendrás
+![Degradado en cuadrícula](./images/Degradado.jpg)
 
-<img src="./images/medalHacker_10.png" width="100"/> y <img src="./images/medalPioneer_10.png" width="100"/> si pintas tu cuadrícula con un degradado de negro (en el centro) a blanco (en los bordes).
+Puedes mejorar tu sketch si haces que se trate de un sketch dinámico donde el centro del color sea la posición del puntero del mouse y además utilizas diversos colores.
 
-2x<img src="./images/medalHacker_10.png" width="100"/>, 2x<img src="./images/medalPioneer_10.png" width="100"/> y <img src="./images/medalAchiever_10.png" width="100"/> si pintas tu cuadríacula con un degradado de un color (rojo, verde o azaul).
+### [Dirigete a la lección 5][21]
 
-3x<img src="./images/medalHacker_10.png" width="100"/> 3x<img src="./images/medalPioneer_10.png" width="100"/> y 2x<img src="./images/medalAchiever_10.png" width="100"/> si pintas tu cuadrícula con un degradado de dos colores.
+Ya te estas convirtiendo en un habil desarrollador de código, ahora debes aprender cómo hacer aún más eficiente y organizado tu código, para eso en esta lección te introduciremos a la _ingeniería del software_ mediante cuatro conceptos fundamentales
+1. Documentación
+2. Parametrización
+3. Modularidad
+4. Reuso
 
-4x<img src="./images/medalHacker_10.png" width="100"/>, 4x<img src="./images/medalPioneer_10.png" width="100"/> y 3x<img src="./images/medalAchiever_10.png" width="100"/> si pintas tu cuadrícula con un degradado de tres colores.
-
-5x<img src="./images/medalHacker_10.png" width="100"/>, 5x<img src="./images/medalPioneer_10.png" width="100"/> y 4x<img src="./images/medalAchiever_10.png" width="100"/> si haces un sketch dinámico que cambien el centro del degradado de tres colores de acuerdo a la posición del mouse en el lienzo.
+No te asustes, que no se trata de que de conviertas en un ingeniero de software solo de que aprendas a hacer buen código.
 
 [1]: https://youtu.be/J3xmvmtBQ2I
 [2]: https://es.wikipedia.org/wiki/Algoritmo
@@ -152,3 +123,6 @@ Obtendrás
 [18]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/969a5caab4890da58326819c36d3e99862147d1a/Leccion_3.ipynb
 [19]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/demo_juego_1.mkv?raw=true
 [20]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/4a0287a793b7f76c4092d4755669ec1754502af1/Leccion_4.ipynb
+[21]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/2ba045e65743e38170c6c36f4993ac4eb0b059dc/Leccion_5.ipynb
+[22]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/rebota/rebota.pde
+[23]: https://en.wikipedia.org/wiki/Richard_Stallman
