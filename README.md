@@ -55,7 +55,7 @@ Dos conceptos fundamentales que debes aprender con plena claridad son
 
 ### Mecánica del curso
 
-A medida que transcurran las lecciones encontrarás nuevos retos que pondrán en juego diferentes habilidades que debes desarrollar. Programar te exigirá utilizar tu cerebro al máximo y debes estar dispuesto a invertir tiempo y ser paciente para obtener los resultados deseados. Programar mejorará tus niveles de disciplina y aceptación de la frustración.
+A medida que transcurran las lecciones encontrarás nuevos retos que pondrán en juego diferentes habilidades que debes desarrollar. Programar te exigirá utilizar tu cerebro al máximo y debes estar dispuesto a invertir tiempo y ser paciente para obtener los resultados deseados. Programar mejorará tus niveles de disciplina y tolerancia a la frustración.
 
 ### [Dirígete a la lección 1 - Dibujando con pixels][13]
 
@@ -95,13 +95,33 @@ Puedes mejorar tu sketch si haces que se trate de un sketch dinámico donde el c
 
 ### [Dirigete a la lección 5][21]
 
-Ya te estas convirtiendo en un habil desarrollador de código, ahora debes aprender cómo hacer aún más eficiente y organizado tu código, para eso en esta lección te introduciremos a la _ingeniería del software_ mediante cuatro conceptos fundamentales
+Ya te estas convirtiendo en un hábil desarrollador de código, ahora debes aprender cómo hacer aún más eficiente y organizado tu código, para eso en esta lección te introduciremos a la _ingeniería del software_ mediante cuatro conceptos fundamentales
 1. Documentación
 2. Parametrización
 3. Modularidad
 4. Reuso
 
 No te asustes, que no se trata de que de conviertas en un ingeniero de software solo de que aprendas a hacer buen código.
+
+### [Dirigete a la lección 6][24]
+
+[Gottfrid Svartholm, Fredrik Neij y Peter Sunde][25] creadores de _The Pirate Bay_ dejann siempre clara su idea de que lo que la mayoria llama "_vida real_" (en referencia a diferenciar lo que sucede mientras estás en tu computador conectado a la red y lo que haces cuando estás lejos de tu pc) no es más que lo que ellos llaman _*la vida lejos del teclado*_ ya que la vida en la red o el pc es tan real como lejos de ello. La programación orientada a objetos (POO) es una oportunidad de ver cómo la manipucación del código nos puede llevar a definir objetos tal como los que encontramos en _la vida lejos del teclado_ (AFK).
+
+En esta lección aprenderás a definir objetos para tus sketch y utilizarlos de forma eficiente.
+
+### [Dirígete a la lección 7][26]
+
+¿Cómo elegir uno entre una lista de colores? o ¿cómo controlar la cantidad de gotas de agua que hay un una lluvia? son preguntas que pueden desafiar nuestra persepción de eficiencia en la progamación de código ya que como hasta ahora has aprendido, deberías definir cada objeto que vas a incluir en tu sketch por separado. Los arreglos vienen a ser la solución para que tus sketch pasen de una simple llovista a una torrencial tormenta con solo cambiar el número de objetos que quieres. En esta lección aprenderás qué son los arreglos (`array`) y cómo utilizarlos para mejorar la eficiencia y modularidad en tu código.
+
+## Recursos bibliográgráficos
+
+Adicional a los contenidos aquí presentados, puedes consultar los siguientes recursos que te ayudarán a complementar lo aprendido y desarrollar nuevas habilidades.
+
+1. [Introducción a p5.js][27]
+2. [Learning Processing: A Beginner guide tu programming images, animation and interaction][28] de Daniel Shiffman - [@shiffman][29]. Los contenidos de este curso son una adaptación al español del material desarrollado por @shiffman.
+
+## @piratax007
+*Fausto Mauricio Lagos Suárez* es licenciado en Matemáticas y Estadística de la Universidad Pedagógica y Tecnológica de Colombia, Magister en Ingeniería Computacional y Matemática por al Universitat Rovira i Virgili de Catalunya (España).
 
 [1]: https://youtu.be/J3xmvmtBQ2I
 [2]: https://es.wikipedia.org/wiki/Algoritmo
@@ -126,3 +146,9 @@ No te asustes, que no se trata de que de conviertas en un ingeniero de software 
 [21]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/2ba045e65743e38170c6c36f4993ac4eb0b059dc/Leccion_5.ipynb
 [22]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/rebota/rebota.pde
 [23]: https://en.wikipedia.org/wiki/Richard_Stallman
+[24]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/040e4a17285acb15644b7530f0278f4c2a416e89/Leccion_6.ipynb
+[25]: https://en.wikipedia.org/wiki/The_Pirate_Bay
+[26]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/040e4a17285acb15644b7530f0278f4c2a416e89/Leccion_7.ipynb
+[27]: https://processingfoundation.press/es/
+[28]: https://www.youtube.com/user/shiffman/playlists?sort=dd&view=50&shelf_id=2
+[29]: https://twitter.com/shiffman
