@@ -11,7 +11,7 @@ Tanto como si lo único que te interesa es ser un simple ciudadano más del mund
 Programar no es una tarea que deba aprender únicamente quien tenga interés en la tecnología o las ciencias es un deber de todo ciudadano crítico y conciente de su sociedad. Aprenderás también cuál es la diferencia entre ser un usuario de la tecnología y dejarse usar por la tecnología.
 
 ### Pero ¿qué es programar?
-![niveles de programación](./images/hacker_HollywoodVSReal.jpg)
+![Hacker Hollywood vs Reality](./images/hacker_HollywoodVSReal.jpg)
 
 Programar no necesariamente tiene que ver con escribir [código][4] en algún lenguaje en particular, programar tiene más que ver con desarrollar un [algoritmo][2] que sirva para ejecutar cualquier tarea de forma eficiente. Piensa y responde
 
