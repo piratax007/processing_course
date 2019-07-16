@@ -4,30 +4,30 @@
 
 ### ¿Por qué programar?
 
-Si alguna vez te has preguntado cómo es que tu celular logra aplicar filtros automáticos para hacerte ver genial en tus selfies, o cómo es que tu smart tv logra entender tus comandos de voz, o has querido simplificar el encedido de luces de tu cuarto para no tener que levantarte de la cama para apagar las luces... todas estas preguntas son la respuesta a ¿por qué programar?. Sea que te guste la tegnología o no, sea que prefieres las artes a las ciencias o la literatura a la ingeniería, por motivos prácticos o políticos, todos sin ningúna distinción deberíamos saber programar ya que *"Todos sabemos cómo será el futuro pero casi nadie se pregunta cómo haremos realidad ese futuro"* [**David Cuartielles**][1].
+Si alguna vez te has preguntado cómo es que tu celular logra aplicar filtros automáticos para hacerte ver genial en tus selfies, o cómo es que tu smart tv logra entender tus comandos de voz, o has querido simplificar el encendido de luces de tu cuarto para no tener que levantarte de la cama para apagar las luces... todas estas preguntas son la respuesta a ***¿por qué programar?***. Sea que te guste la tecnología o no, sea que prefieres las artes a las ciencias o la literatura a la ingeniería, por motivos prácticos o políticos, todos sin ninguna distinción deberíamos saber programar ya que *"Todos sabemos cómo será el futuro pero casi nadie se pregunta cómo haremos realidad ese futuro"* [**David Cuartielles**][1].
 
-Tanto como si lo único que te interesa es ser un simple ciudadano más del mundo, aprender a programar va a contribuir para mejorar tus capacidades de razonamiento lógico, estructurado y ordenado, también se desarrollará tu intuición, serás más crítico y evaluarás más rápidamente presentes en tus razonamientos y en los razonamientos de tus interlocutores.
+Tanto como si lo único que te interesa es ser un simple ciudadano más del mundo, aprender a programar va a contribuir para mejorar tus capacidades de razonamiento lógico, estructurado y ordenado, también se desarrollará tu intuición, serás más crítico y evaluarás más rápidamente posibles errores  presentes en tus razonamientos y en los razonamientos de tus interlocutores.
 
-Programar no es una tarea que deba aprender únicamente quien tenga interés en la tecnología o las ciencias es un deber de todo ciudadano crítico y conciente de su sociedad. Aprenderás también cuál es la diferencia entre ser un usuario de la tecnología y dejarse usar por la tecnología.
+Programar no es una tarea que deba aprender únicamente quien tenga interés en la tecnología o las ciencias es un deber de todo ciudadano crítico y consiente de su sociedad. Saber programar te enseñará también cuál es la diferencia entre ser un usuario de la tecnología y dejarse usar por la tecnología.
 
 ### Pero ¿qué es programar?
 ![Hacker Hollywood vs Reality](./images/hacker_HollywoodVSReal.jpg)
 
-Programar no necesariamente tiene que ver con escribir [código][4] en algún lenguaje en particular, programar tiene más que ver con desarrollar un [algoritmo][2] que sirva para ejecutar cualquier tarea de forma eficiente. Piensa y responde
+Programar no necesariamente tiene que ver con escribir [código][4] en algún lenguaje en particular, programar tiene más que ver con desarrollar un [algoritmo][2] que sirva para ejecutar cualquier tarea de forma eficiente. Piensa y responde:
 
 1. ¿Cuál es el procedimiento que sigues cada vez que te lavas los dientes?
 2. Ahora detalla en una lista cada uno de los pasos que debes seguir, entre más detallada sea tu lista mejor.
-3. ¿Alguno de los pasos que listaste en el numeral anterior es redundante o puede eliminarse de la lista sin perdida de calidad en el resultado final (tener los dientes límpios)?
+3. ¿Alguno de los pasos que listaste en el numeral anterior es redundante o puede eliminarse de la lista sin perdida de calidad en el resultado final (tener los dientes limpios)?
 
 Lo que has hecho es
 1. Determinar un problema
 2. Establecer un algoritmo de solución
 3. Depurar tu algoritmo
-por lo tanto lo que has hecho es **programar** tu cerebro para que ejecute los pasos necesarios para que tengas los dientes límpios.
+por lo tanto lo que has hecho es **programar** tu cerebro para que ejecute los pasos necesarios para que tengas los dientes limpios.
 
 Si desarrollaste el ejercicio anterior estas ahora en capacidad de comprender que programar no tiene que ver con desarrollar código e incluso no tiene que ver con la tecnología, tiene que ver con **pensar**. Aparentemente siempre pensamos, pero eso no es muy cierto, por lo general dejamos que sea nuestro cerebro el que tome decisiones que se ejecutan completamente en [segundo plano][3] y de las cuales no somos conscientes. Programar es hacerse consciente de un problema y los pasos necesarios para resolverlo eficientemente y esto exige una alta disposición para pensar de manera muy estructurada.
 
-Programar no es una tarea fácil, es una tarea exigente que pondrá en jaque tu tolerancia al fracaso pero descubrirás que la satisfacción de conseguir la solución de un problema es más grande que sobresalto del camino, aprenderás que el esfuerzo, la dedicación y disciplina son los escudos que te defienden de la mediocridad.
+Programar no es una tarea fácil, es una tarea exigente que pondrá en jaque tu tolerancia al fracaso pero descubrirás que la satisfacción de conseguir la solución de un problema es más grande que cualquier sobresalto del camino, aprenderás que el esfuerzo, la dedicación y disciplina son la única vía al éxito - el camino fácil solo te conduce a la mediocridad -.
 
 ### ¿Qué es un lenguaje de programación?
 
@@ -37,14 +37,14 @@ Los lenguajes de programación se clasifican de acuerdo a la cercanía con el le
 
 ![niveles de programación](./images/programmingLanguageS.png)
 
-Dos conceptos fundamentales que debes aprender con plena claridad son
+Dos conceptos fundamentales que debes aprender con absoluta claridad son
 
 - **Sintaxis** es el orden lógico, la estructura del lenguaje de programación. Todo lenguaje tiene una sintaxis, un ejemplo simple: en español dices _"el auto color rojo"_ no _"el auto rojo color"_, el orden de las palabras determina su correcta _sintaxis_.
-- **Semántica** es el significado de lo que dices o escribes, así puedes decir _"el resplandeciente corpúsculo de brillante amanecer sobresale bajo las olas de impregnante sonido"_ lo cual puede que se escuche "bonito" pero carece de todo significado. Un lenguaje de programación tiene semántica y si lo que escribes no tiene significado, la máquina no podrá ejecutarlo.
+- **Semántica** es el significado de lo que dices o escribes, así puedes decir _"el resplandeciente corpúsculo de brillante amanecer sobresale bajo las olas de impregnante sonido"_ lo cual puede que se escuche - a lo más - "bonito" pero carece de todo significado. Un lenguaje de programación tiene semántica y si lo que escribes no tiene significado, la máquina no podrá ejecutarlo.
 
 ## Processing
 
-[Processing][5] es un [lenguaje de programación][6] basado en [Java][7] orientado a artístas y diseñadores gráficos. Ha tenido un gran impacto en la educación como lenguaje de aprendizaje. Es [Software Libre][8] [multiplataforma][9] por tanto puede ser utilizado en GNU / Linux, MacOS o MS Windows sin diferencia. Desde [processing.org][10] puede descargarse el instalador para cualquiera de estos [sistemas operativos][11].
+[Processing][5] es un [lenguaje de programación][6] basado en [Java][7] orientado a artistas y diseñadores gráficos. Ha tenido un gran impacto en la educación como lenguaje de aprendizaje. Es [Software Libre][8] [multiplataforma][9] por tanto puede ser utilizado en GNU / Linux, MacOS o MS Windows sin diferencia. Desde [processing.org][10] puede descargarse el instalador para cualquiera de estos [sistemas operativos][11].
 
 ### ¿Qué aprenderé?
 
@@ -68,18 +68,21 @@ Programar te exigirá utilizar tu cerebro al máximo y debes estar dispuesto a i
 
 En esta lección conocerás el IDE de processing y aprenderás a dibujar usando el sistema de coordenadas así como los diferentes modelos de color que puedes utilizar en processing. Aprovecha para darte una pasada por [la referencia de processing][15] y aprender cómo esta organizada la documentación. Saber leer la documentación es fundamental ya que te permitirá conocer el lenguaje con el que estás desarrollando y encontrar fácilmente las herramientas que estas buscando para tus sketch.
 
-#### MISIÓN MARTIN GARDNER
+#### El Teorema de los cuatro colores
 
-Ahora que has aprendido cómo dibujar con processing lee atentemante [este artículo][14] sobre el teorema de los cuatro colores. Para hacerte una idea más clara sobre la misión que tienes por delante. Resuelve [aquí][16] el mapa de Martín Gardner y después crea en processing el mapa más complejo que se te ocurra, el tamaño lo decides tu así como el número de regiones que utilizarás y la fórma de estas regiones.
+Dado un mapa - grafo - ¿cuántos colores necesitas mínimo para colorear todo el mapa - grafo - sin que dos regiones adyacentes tengan el mismo color?
+
+Ahora que has aprendido cómo dibujar con processing lee atentemante [este artículo][14] sobre el teorema de los cuatro colores. Para hacerte una idea más clara sobre la misión que tienes por delante. Resuelve [aquí][16] el mapa de Martín Gardner y después crea en processing el mapa más complejo que se te ocurra, el tamaño lo decides tu así como el número de regiones que utilizarás y la forma de estas regiones.
 
 Revisa este ejemplo:
+
 ![Sarah Suárez](./images/Mapas/Sarah_Suarez.jpg)
 
 Comparte siempre tus resultados con @BrainOnTube en Twitter para recibir tus medallas de reconocimiento.
 
 ### [Dirígete a la lección 2 - Variables][17]
 
-En este lección aprenderás hacerca de la manipulación de variables ¿qué son? ¿cómo se crean? ¿qué tipos de variables existen? y también aprenderás a interactuar con tus sketch mediante el teclado y el mouse.
+En este lección aprenderás acerca de la manipulación de variables ¿qué son? ¿cómo se crean? ¿qué tipos de variables existen? y también aprenderás a interactuar con tus sketch mediante el teclado y el mouse.
 
 ### [Dirígete a la lección 3 - Condicionales][18]
 En esta lección aprenderás cómo hacer para que tus sketch tomen decisiones mediante el uso de declaraciones y operadores condicionales `if` y variables booleanas.

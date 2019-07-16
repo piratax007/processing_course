@@ -1,0 +1,686 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Leccion\_7}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \hypertarget{arreglos-vectores}{%
+\section{Arreglos (vectores)}\label{arreglos-vectores}}
+
+Tal como se vió en la
+\href{https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/1765d581fd750be2ae8c001e2bae4708b0d66f12/Leccion_2.ipynb\#Variables}{Lección
+2 - Variables}, una varible es un espacio en memoria para almacenar un
+dato (numéro, caracter, color, etc.) el uso de variables tiene tres
+elementos 1. Definición: Reserva el espacio en memoria para un tipo de
+dato específico e.g. \texttt{int\ variable;}. 2. Inicialización:
+Determina el primer valor que albergará el espacio reservado, dicho
+valor puede alterarse de forma dinámica. 3. Uso: El llamado a la
+variable bien para leer el valor almacenado o para alterarlo.
+
+\hypertarget{quuxe9-es-un-arreglo}{%
+\subsection{¿Qué es un arreglo?}\label{quuxe9-es-un-arreglo}}
+
+Los arreglos o \emph{vectores} son espacios en memoria destinados a
+almacenar \texttt{n} elementos del mismo tipo, así por ejemplo se puede
+tener un arreglo de números enteros almacenados en memoria con la misma
+referencia pero diferente valor. Para utilizar arreglos se requieren
+cuatro elementos 1. Definición: Determina el tipo de objeto que
+contendrá cada espacio del arreglo. 2. (1.1) Creación: Establece la
+longitud (\texttt{length}) del arreglo i.e.~cuántos espacios o elementos
+almacenará. 3. Inicialización 4. Uso
+
+Los elementos de un arreglo, debido a que están definidos bajo la misma
+referencia o nombre, se identifican mediante un número \emph{índice}.
+Así por ejemplo en el arreglo
+\[M = \left[\matrix{-3 & 4 & 100 & 2 & -97}\right]\] los elementos
+individuales son \(M_0 = -3\), \(M_1 = 4\), \ldots{}, \(M_4 = -97\). El
+primer elemento de un arreglo siempre tendrá índice 0.
+
+\hypertarget{cuuxe1ndo-utilizar-arreglos}{%
+\subsection{¿Cuándo utilizar
+arreglos?}\label{cuuxe1ndo-utilizar-arreglos}}
+
+Piensa en esta situación: Quieres hacer un sketch en el que una elipse
+cambie cada 10 segundos de color de forma aleatoria pero los colores
+deben ser, azul, cyan, amarillo, naranja, rojo y negro ¿cómo haces esto?
+evidentemente no puedes utilizar generación aleatoria de números para
+establecer los componentes RGB de cada color porque será muy difíl
+conseguir los mismos colores exactamente cada vez, lo mejor que puedes
+hacer es definir un arreglo que contenga los seis colores que quieres
+utilizar y seleccionar uno de estos cada vez de forma aleatoria. veamos
+cómo
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{color}\PY{o}{[}\PY{o}{]} \PY{n}{colors} \PY{o}{=} \PY{k}{new} \PY{n}{color}\PY{o}{[}\PY{l+m+mi}{6}\PY{o}{]}\PY{o}{;} \PY{c+c1}{// Crea un arreglo de 6 espacios del tipo color}
+        \PY{k+kt}{int} \PY{n}{time} \PY{o}{=} \PY{n}{millis}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+        \PY{k+kt}{int} \PY{n}{selectColor} \PY{o}{=} \PY{k+kt}{int}\PY{o}{(}\PY{n}{random}\PY{o}{(}\PY{l+m+mi}{6}\PY{o}{)}\PY{o}{)}\PY{o}{;} \PY{c+c1}{// genera un número entero aleatorio entre 0 y 5}
+        
+        \PY{k+kt}{void} \PY{n+nf}{setup}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{colors}\PY{o}{[}\PY{l+m+mi}{0}\PY{o}{]} \PY{o}{=} \PY{n}{color}\PY{o}{(}\PY{err}{\PYZsh{}}\PY{l+m+mo}{0012}\PY{n}{DB}\PY{o}{)}\PY{o}{;} \PY{c+c1}{// Azul}
+            \PY{n}{colors}\PY{o}{[}\PY{l+m+mi}{1}\PY{o}{]} \PY{o}{=} \PY{n}{color}\PY{o}{(}\PY{err}{\PYZsh{}}\PY{l+m+mo}{00}\PY{l+m+mi}{97}\PY{n}{DB}\PY{o}{)}\PY{o}{;} \PY{c+c1}{// Cyan}
+            \PY{n}{colors}\PY{o}{[}\PY{l+m+mi}{2}\PY{o}{]} \PY{o}{=} \PY{n}{color}\PY{o}{(}\PY{err}{\PYZsh{}}\PY{n}{DBC900}\PY{o}{)}\PY{o}{;} \PY{c+c1}{// Amarillo}
+            \PY{n}{colors}\PY{o}{[}\PY{l+m+mi}{3}\PY{o}{]} \PY{o}{=} \PY{n}{color}\PY{o}{(}\PY{err}{\PYZsh{}}\PY{n}{DB5700}\PY{o}{)}\PY{o}{;} \PY{c+c1}{// Naranja}
+            \PY{n}{colors}\PY{o}{[}\PY{l+m+mi}{4}\PY{o}{]} \PY{o}{=} \PY{n}{color}\PY{o}{(}\PY{err}{\PYZsh{}}\PY{n}{DB0012}\PY{o}{)}\PY{o}{;} \PY{c+c1}{// Rojo}
+            \PY{n}{colors}\PY{o}{[}\PY{l+m+mi}{5}\PY{o}{]} \PY{o}{=} \PY{n}{color}\PY{o}{(}\PY{err}{\PYZsh{}}\PY{l+m+mo}{000000}\PY{o}{)}\PY{o}{;} \PY{c+c1}{// Negro}
+        \PY{o}{\PYZcb{}}
+        
+        \PY{k+kt}{void} \PY{n+nf}{draw}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{background}\PY{o}{(}\PY{l+m+mi}{75}\PY{o}{)}\PY{o}{;}
+            \PY{k}{if} \PY{o}{(}\PY{n}{millis}\PY{o}{(}\PY{o}{)} \PY{o}{\PYZgt{}} \PY{n}{time} \PY{o}{+} \PY{l+m+mi}{10000}\PY{o}{)}\PY{o}{\PYZob{}}
+                \PY{n}{selectColor} \PY{o}{=} \PY{k+kt}{int}\PY{o}{(}\PY{n}{random}\PY{o}{(}\PY{l+m+mi}{6}\PY{o}{)}\PY{o}{)}\PY{o}{;}
+                \PY{n}{time} \PY{o}{=} \PY{n}{millis}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+            \PY{o}{\PYZcb{}}    
+            \PY{n}{noStroke}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+            \PY{n}{fill}\PY{o}{(}\PY{n}{colors}\PY{o}{[}\PY{n}{selectColor}\PY{o}{]}\PY{o}{)}\PY{o}{;}
+            \PY{n}{ellipse}\PY{o}{(}\PY{n}{width} \PY{o}{/} \PY{l+m+mi}{2}\PY{o}{,} \PY{n}{height} \PY{o}{/} \PY{l+m+mi}{2}\PY{o}{,} \PY{l+m+mi}{50}\PY{o}{,} \PY{l+m+mi}{50}\PY{o}{)}\PY{o}{;}
+        \PY{o}{\PYZcb{}}
+\end{Verbatim}
+
+
+    
+    \begin{verbatim}
+<IPython.core.display.Javascript object>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<IPython.core.display.HTML object>
+    \end{verbatim}
+
+    
+    En el sketch anterior se ha utilizado un arreglo \texttt{colors} para
+almacenar seis colores y elegir cada vez uno de éstos de forma aleatoria
+mediante la generación de números enteros \emph{randomizados} entre 0 y
+5.
+
+Fíjate cómo en la primera línea se define el arreglo y se determina su
+longitud en una sola línea mientras que en el bloque
+\emph{\texttt{setup}} se esta determinando el color que se almacena en
+cada posición del arreglo. Esto mismo puede hacerse en una sola
+instrucción tal como la siguiente donde se crea e inicializa cada
+entrada del arreglo.
+
+\begin{verbatim}
+color[] colors = {color(#0012DB), color(#0097DB), color(#DBC900), //
+    color(#DB5700), color(#DB0012), color(#000000)
+    };
+\end{verbatim}
+
+\hypertarget{arreglos-de-objetos}{%
+\subsection{Arreglos de objetos}\label{arreglos-de-objetos}}
+
+    Como en el ejemplo anterior, un arreglo puede ser útil para definir un
+conjunto de elementos del mismo tipo y poder así ``llamarlos'' de una
+forma más simple en el sketch, es decir, en lugar de crear seis
+variables (una por cada color) un rreglo que los contiene todos hace más
+fácil su selección principalmente porque es más fácil generar un número
+(índice) aleatorio que el nombre de una variable. También pueden
+utilizarse arreglos para optimizar el uso de objetos, en el ejemplo
+\href{https://github.com/piratax007/processing_course/tree/master/Ejemplos/pelotas_locas}{pelotas
+locas} puedes ver cómo se utiliza una clase para generar pelotas que
+revotan por todo el lienzo colisionando entre ellas pero la pregunta es
+¿cómo harías si quisieras agregar 10, 20, o 100?. Lee atentamente el
+código del siguiente ejemplo que te será explicado luego.
+
+\hypertarget{star-trek}{%
+\subsubsection{Star Trek}\label{star-trek}}
+
+¿Quieres viajar por el espacio a unos cuántos parsecs de velocidad?
+vamos a hacerlo con processing
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{star}\PY{o}{[}\PY{o}{]} \PY{n}{estrellas} \PY{o}{=} \PY{k}{new} \PY{n}{star}\PY{o}{[}\PY{l+m+mi}{400}\PY{o}{]}\PY{o}{;}
+        
+        \PY{k+kt}{void} \PY{n+nf}{setup}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{size}\PY{o}{(}\PY{l+m+mi}{300}\PY{o}{,} \PY{l+m+mi}{300}\PY{o}{)}\PY{o}{;}
+            \PY{k}{for} \PY{o}{(}\PY{k+kt}{int} \PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}\PY{o}{;} \PY{n}{i} \PY{o}{\PYZlt{}} \PY{n}{estrellas}\PY{o}{.}\PY{n+na}{length}\PY{o}{;} \PY{n}{i}\PY{o}{+}\PY{o}{+}\PY{o}{)}\PY{o}{\PYZob{}}
+                \PY{n}{estrellas}\PY{o}{[}\PY{n}{i}\PY{o}{]} \PY{o}{=} \PY{k}{new} \PY{n}{star}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+            \PY{o}{\PYZcb{}}
+        \PY{o}{\PYZcb{}}
+        
+        \PY{k+kt}{void} \PY{n+nf}{draw}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{background}\PY{o}{(}\PY{l+m+mi}{0}\PY{o}{)}\PY{o}{;}
+            \PY{k}{for} \PY{o}{(}\PY{k+kt}{int} \PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}\PY{o}{;} \PY{n}{i} \PY{o}{\PYZlt{}} \PY{n}{estrellas}\PY{o}{.}\PY{n+na}{length}\PY{o}{;} \PY{n}{i}\PY{o}{+}\PY{o}{+}\PY{o}{)}\PY{o}{\PYZob{}}
+                \PY{n}{estrellas}\PY{o}{[}\PY{n}{i}\PY{o}{]}\PY{o}{.}\PY{n+na}{dibujar}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+                \PY{n}{estrellas}\PY{o}{[}\PY{n}{i}\PY{o}{]}\PY{o}{.}\PY{n+na}{mover}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+            \PY{o}{\PYZcb{}}
+        \PY{o}{\PYZcb{}}
+        
+        \PY{k+kd}{class} \PY{n+nc}{star}\PY{o}{\PYZob{}}
+            \PY{k+kt}{float} \PY{n}{x}\PY{o}{,} \PY{n}{y}\PY{o}{,} \PY{n}{z}\PY{o}{;}
+            
+            \PY{n}{star}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+                \PY{n}{x} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{o}{\PYZhy{}}\PY{n}{width}\PY{o}{,} \PY{n}{width}\PY{o}{)}\PY{o}{;}
+                \PY{n}{y} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{o}{\PYZhy{}}\PY{n}{height}\PY{o}{,} \PY{n}{height}\PY{o}{)}\PY{o}{;}
+                \PY{n}{z} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{n}{width}\PY{o}{)}\PY{o}{;}
+            \PY{o}{\PYZcb{}}
+            
+            \PY{k+kt}{void} \PY{n+nf}{dibujar}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+                \PY{k+kt}{float} \PY{n}{sx} \PY{o}{=} \PY{n}{map}\PY{o}{(}\PY{n}{x} \PY{o}{/} \PY{n}{z}\PY{o}{,} \PY{l+m+mi}{0}\PY{o}{,} \PY{l+m+mi}{1}\PY{o}{,} \PY{n}{width} \PY{o}{/} \PY{l+m+mi}{2}\PY{o}{,} \PY{n}{width}\PY{o}{)}\PY{o}{;}
+                \PY{k+kt}{float} \PY{n}{sy} \PY{o}{=} \PY{n}{map}\PY{o}{(}\PY{n}{y} \PY{o}{/} \PY{n}{z}\PY{o}{,} \PY{l+m+mi}{0}\PY{o}{,} \PY{l+m+mi}{1}\PY{o}{,} \PY{n}{height} \PY{o}{/} \PY{l+m+mi}{2}\PY{o}{,} \PY{n}{height}\PY{o}{)}\PY{o}{;}
+                \PY{k+kt}{float} \PY{n}{r} \PY{o}{=} \PY{n}{map}\PY{o}{(}\PY{n}{z}\PY{o}{,} \PY{l+m+mi}{0}\PY{o}{,} \PY{n}{width}\PY{o}{,} \PY{l+m+mi}{8}\PY{o}{,} \PY{l+m+mi}{0}\PY{o}{)}\PY{o}{;}
+                
+                \PY{n}{fill}\PY{o}{(}\PY{l+m+mi}{255}\PY{o}{)}\PY{o}{;}
+                \PY{n}{noStroke}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+                \PY{n}{ellipse}\PY{o}{(}\PY{n}{sx}\PY{o}{,} \PY{n}{sy}\PY{o}{,} \PY{n}{r}\PY{o}{,} \PY{n}{r}\PY{o}{)}\PY{o}{;}
+            \PY{o}{\PYZcb{}}
+            
+            \PY{k+kt}{void} \PY{n+nf}{mover}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+                \PY{n}{z} \PY{o}{\PYZhy{}}\PY{o}{=} \PY{l+m+mi}{10}\PY{o}{;}
+                \PY{k}{if} \PY{o}{(}\PY{n}{z} \PY{o}{\PYZlt{}} \PY{l+m+mi}{1}\PY{o}{)}\PY{o}{\PYZob{}}
+                    \PY{n}{z} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{n}{width}\PY{o}{)}\PY{o}{;}
+                    \PY{n}{x} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{o}{\PYZhy{}}\PY{n}{width}\PY{o}{,} \PY{n}{width}\PY{o}{)}\PY{o}{;}
+                    \PY{n}{y} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{o}{\PYZhy{}}\PY{n}{height}\PY{o}{,} \PY{n}{height}\PY{o}{)}\PY{o}{;}
+                \PY{o}{\PYZcb{}}
+            \PY{o}{\PYZcb{}}
+        \PY{o}{\PYZcb{}}
+\end{Verbatim}
+
+
+    
+    \begin{verbatim}
+<IPython.core.display.Javascript object>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<IPython.core.display.HTML object>
+    \end{verbatim}
+
+    
+    \hypertarget{descifrando-star-trek}{%
+\subsubsection{Descifrando Star Trek}\label{descifrando-star-trek}}
+
+No explicaremos el código de la clase \texttt{star} ahora que sabes
+desarrollar clases puedes estudiarlo por ti mismo pero presta especial
+atención a la función \texttt{map} que convierte un valor dado en un
+rango específico a otro rango ascendente o descendente, lee en la
+referencia acerca de esta función.
+
+En el sketch, la primera línea
+
+\begin{verbatim}
+    star[] estrellas = new star[400];
+\end{verbatim}
+
+define un arreglo con cuatrocientas entradas de objetos del tipo
+\texttt{star}. Cada una de estas estrellas se crea entre las líneas 5 y
+7
+
+\begin{verbatim}
+    for (int i = 0; i < estrellas.length; i++){
+        estrellas[i] = new star();
+    }
+\end{verbatim}
+
+el bucle \texttt{for} recorre el arreglo desde la entrada 0
+(\texttt{i\ =\ 0}) hasta la última entrada identificada con la
+instrucción \texttt{lenght} que devuelve la longitud del arreglo, de una
+en una creando un nuevo objeto de la clase \texttt{star} en cada
+entrada. El mismo bucle entre las líneas 12 y 15 ejecuta las funciones
+\texttt{dibujar} y \texttt{mover} de cada objeto \texttt{star}.
+
+\begin{verbatim}
+    for (int i = 0; i < estrellas.length; i++){
+        estrellas[i].dibujar();
+        estrellas[i].mover();
+    }
+\end{verbatim}
+
+Evidentemente, con apenas algunas lineas de código puedes controlar
+todos los objetos de la misma clase que necesites, si quieres más o
+menos estrellas solo necesitas modificar la longitud del arreglo
+\texttt{estrellas} en la primera línea del sketch.
+
+\hypertarget{ejercicio-1}{%
+\paragraph{Ejercicio 1:}\label{ejercicio-1}}
+
+Descarga el ejemplo
+\href{https://github.com/piratax007/processing_course/tree/master/Ejemplos/pelotas_locas}{pelotas
+locas} y modifica el sketch de tal forma que mediante un arreglo de
+objetos puedas controlar 10, 20 o el número de pelotas locas que quieras
+modificando únicamente el tamaño del arreglo.
+
+\hypertarget{arreglos-de-longitud-flexible}{%
+\subsection{Arreglos de Longitud
+Flexible}\label{arreglos-de-longitud-flexible}}
+
+Hasta ahora has aprendido a definir arreglo de longitud fija. En el
+ejemplo \texttt{Start\ Trek} tienes 400 estrellas o más o menos de
+acuerdo a como definas la longitud del array, sin embargo, en ocasiones
+puede que definir la longitud del array en un inicio sea algo que no se
+pueda determinar o a lo menos difícil debido a que no puedes tener
+siempre la certeza de cuántos objetos vas a utilizar y entonces es
+cuando necesitas poder controlar la longitud de tus array en
+\emph{tiempo de ejecución}. Puedes aplicar diversas alternativas para
+conseguir esto, la menos adecuada es definir un array con una longitud
+muy grande para así tener suficientes entradas de las que disponer e ir
+creando o eliminando cada uno a medida que necesitas más o menos
+elementos en el array, esta opción es muy inadecuada ya que significa
+asignar un espacio en memoria que tal vez no utilices del todo por lo
+tanto estarás consumiendo recursos innecesariamente. Otra opción es
+utilizar el método \texttt{append} para añadir nuevas entradas a tu
+array que después no podrás eliminar. El método \texttt{append} puede
+hacer lenta la ejecución de tu sketch debido a que al agregar una
+entrada no se hace sobre el array original sino que se crea una copia
+del array con las entradas ya definidas más la nueva entrada creada,
+así, si agregas 10 entradas nuevas mediante el método \texttt{append}
+tendras 10 copias en memoria ocupando nuevamente recursos de forma
+innecesaria.
+
+\hypertarget{arraylist}{%
+\subsubsection{ArrayList}\label{arraylist}}
+
+Un \texttt{ArrayList} es básicamente un arreglo de longitud flexible al
+cual se pueden agregar nuevas entradas o eliminar entradas sin generar
+copias del mismo y de manera muy fácil.
+
+Para definir un \texttt{ArrayList} puede utilizarse la sintaxis
+
+\begin{verbatim}
+ArrayList<tipo> nombre = new ArrayList<tipo>(tamaño inicial);
+\end{verbatim}
+
+Los principales métodos asociados a un \texttt{ArrayList} son
+\texttt{size} equivalente a \texttt{legth} en un array de longitud fija,
+\texttt{get} para referirse a una entreda particular, \texttt{add} para
+agregar una nueva entrada al \texttt{ArrayList} y \texttt{remove} para
+eliminar una entrada del \texttt{ArrayList}.
+
+En el siguiente ejemplo se ha modificado el sketch el ejemplo
+\href{https://github.com/piratax007/processing_course/tree/master/Ejemplos/pelotas_locas}{pelotas
+locas} para que se agregue un nuevo objeto cada vez que se da click con
+el mouse y se eliminen los objetos que colicionan
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{ArrayList}\PY{o}{\PYZlt{}}\PY{n}{pelotaLoca}\PY{o}{\PYZgt{}} \PY{n}{bubbles} \PY{o}{=} \PY{k}{new} \PY{n}{ArrayList}\PY{o}{\PYZlt{}}\PY{n}{pelotaLoca}\PY{o}{\PYZgt{}}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+        
+        \PY{k+kt}{void} \PY{n+nf}{setup}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+          \PY{n}{size}\PY{o}{(}\PY{l+m+mi}{400}\PY{o}{,} \PY{l+m+mi}{400}\PY{o}{)}\PY{o}{;}
+        \PY{o}{\PYZcb{}}
+        
+        \PY{k+kt}{void} \PY{n+nf}{draw}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+          \PY{n}{background}\PY{o}{(}\PY{l+m+mi}{75}\PY{o}{)}\PY{o}{;}
+          \PY{k}{for} \PY{o}{(}\PY{k+kt}{int} \PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}\PY{o}{;} \PY{n}{i} \PY{o}{\PYZlt{}} \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{size}\PY{o}{(}\PY{o}{)} \PY{o}{\PYZhy{}} \PY{l+m+mi}{2}\PY{o}{;} \PY{n}{i}\PY{o}{+}\PY{o}{+}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{get}\PY{o}{(}\PY{n}{i}\PY{o}{)}\PY{o}{.}\PY{n+na}{dibujar}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+            \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{get}\PY{o}{(}\PY{n}{i}\PY{o}{)}\PY{o}{.}\PY{n+na}{mover}\PY{o}{(}\PY{o}{)}\PY{o}{;}
+            \PY{k}{for} \PY{o}{(}\PY{k+kt}{int} \PY{n}{j} \PY{o}{=} \PY{l+m+mi}{0}\PY{o}{;} \PY{n}{j} \PY{o}{\PYZlt{}} \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{size}\PY{o}{(}\PY{o}{)} \PY{o}{\PYZhy{}} \PY{l+m+mi}{2}\PY{o}{;} \PY{n}{j}\PY{o}{+}\PY{o}{+}\PY{o}{)}\PY{o}{\PYZob{}}
+              \PY{k}{if} \PY{o}{(}\PY{n}{i} \PY{o}{!}\PY{o}{=} \PY{n}{j} \PY{o}{\PYZam{}}\PY{o}{\PYZam{}} \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{get}\PY{o}{(}\PY{n}{j}\PY{o}{)}\PY{o}{.}\PY{n+na}{colisionar}\PY{o}{(}\PY{n}{bubbles}\PY{o}{.}\PY{n+na}{get}\PY{o}{(}\PY{n}{i}\PY{o}{)}\PY{o}{,} \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{get}\PY{o}{(}\PY{n}{j}\PY{o}{)}\PY{o}{)}\PY{o}{)}\PY{o}{\PYZob{}}
+                \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{remove}\PY{o}{(}\PY{n}{bubbles}\PY{o}{.}\PY{n+na}{get}\PY{o}{(}\PY{n}{i}\PY{o}{)}\PY{o}{)}\PY{o}{;}
+                \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{remove}\PY{o}{(}\PY{n}{bubbles}\PY{o}{.}\PY{n+na}{get}\PY{o}{(}\PY{n}{j}\PY{o}{)}\PY{o}{)}\PY{o}{;}
+              \PY{o}{\PYZcb{}}
+            \PY{o}{\PYZcb{}}
+          \PY{o}{\PYZcb{}}
+        \PY{o}{\PYZcb{}}
+        
+        \PY{k+kt}{void} \PY{n+nf}{mousePressed}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+          \PY{n}{bubbles}\PY{o}{.}\PY{n+na}{add}\PY{o}{(}\PY{k}{new} \PY{n}{pelotaLoca}\PY{o}{(}\PY{o}{)}\PY{o}{)}\PY{o}{;}
+        \PY{o}{\PYZcb{}}
+        
+        \PY{k+kd}{class} \PY{n+nc}{pelotaLoca}\PY{o}{\PYZob{}}
+          \PY{k+kt}{float} \PY{n}{h}\PY{o}{,} \PY{n}{k}\PY{o}{,} \PY{n}{r}\PY{o}{;}
+          \PY{n}{color} \PY{n}{relleno}\PY{o}{;}
+          \PY{k+kt}{float} \PY{n}{vX}\PY{o}{,} \PY{n}{vY}\PY{o}{;}
+          
+          \PY{n}{pelotaLoca}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{r} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{l+m+mi}{10}\PY{o}{,} \PY{l+m+mi}{15}\PY{o}{)}\PY{o}{;}
+            \PY{n}{h} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{n}{r}\PY{o}{,} \PY{n}{width} \PY{o}{\PYZhy{}} \PY{n}{r}\PY{o}{)}\PY{o}{;}
+            \PY{n}{k} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{n}{r}\PY{o}{,} \PY{n}{height} \PY{o}{\PYZhy{}} \PY{n}{r}\PY{o}{)}\PY{o}{;}
+            \PY{n}{relleno} \PY{o}{=} \PY{n}{color}\PY{o}{(}\PY{n}{random}\PY{o}{(}\PY{l+m+mi}{255}\PY{o}{)}\PY{o}{,} \PY{n}{random}\PY{o}{(}\PY{l+m+mi}{255}\PY{o}{)}\PY{o}{,} \PY{n}{random}\PY{o}{(}\PY{l+m+mi}{255}\PY{o}{)}\PY{o}{)}\PY{o}{;}
+            \PY{n}{vX} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{l+m+mi}{3}\PY{o}{,} \PY{l+m+mi}{5}\PY{o}{)}\PY{o}{;}
+            \PY{n}{vY} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{l+m+mi}{3}\PY{o}{,} \PY{l+m+mi}{5}\PY{o}{)}\PY{o}{;}
+          \PY{o}{\PYZcb{}}
+          
+          \PY{n}{pelotaLoca}\PY{o}{(}\PY{k+kt}{float} \PY{n}{Radio}\PY{o}{,} \PY{n}{color} \PY{n}{Color}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{r} \PY{o}{=} \PY{n}{Radio}\PY{o}{;}
+            \PY{n}{h} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{n}{r}\PY{o}{,} \PY{n}{width} \PY{o}{\PYZhy{}} \PY{n}{r}\PY{o}{)}\PY{o}{;}
+            \PY{n}{k} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{n}{r}\PY{o}{,} \PY{n}{height} \PY{o}{\PYZhy{}} \PY{n}{r}\PY{o}{)}\PY{o}{;}
+            \PY{n}{relleno} \PY{o}{=} \PY{n}{Color}\PY{o}{;}
+            \PY{n}{vX} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{l+m+mi}{3}\PY{o}{,} \PY{l+m+mi}{5}\PY{o}{)}\PY{o}{;}
+            \PY{n}{vY} \PY{o}{=} \PY{n}{random}\PY{o}{(}\PY{l+m+mi}{3}\PY{o}{,} \PY{l+m+mi}{5}\PY{o}{)}\PY{o}{;}
+          \PY{o}{\PYZcb{}}
+          
+          \PY{k+kt}{void} \PY{n+nf}{dibujar}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{fill}\PY{o}{(}\PY{n}{relleno}\PY{o}{)}\PY{o}{;}
+            \PY{n}{ellipse}\PY{o}{(}\PY{n}{h}\PY{o}{,} \PY{n}{k}\PY{o}{,} \PY{l+m+mi}{2} \PY{o}{*} \PY{n}{r}\PY{o}{,} \PY{l+m+mi}{2} \PY{o}{*} \PY{n}{r}\PY{o}{)}\PY{o}{;}
+          \PY{o}{\PYZcb{}}
+          
+          \PY{k+kt}{void} \PY{n+nf}{mover}\PY{o}{(}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{n}{h} \PY{o}{+}\PY{o}{=} \PY{n}{vX}\PY{o}{;}
+            \PY{n}{k} \PY{o}{+}\PY{o}{=} \PY{n}{vY}\PY{o}{;}
+            
+            \PY{k}{if} \PY{o}{(}\PY{n}{h} \PY{o}{\PYZlt{}} \PY{n}{r} \PY{o}{|}\PY{o}{|} \PY{n}{h} \PY{o}{\PYZgt{}} \PY{n}{width} \PY{o}{\PYZhy{}} \PY{n}{r}\PY{o}{)}\PY{o}{\PYZob{}}
+              \PY{n}{vX} \PY{o}{*}\PY{o}{=} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{o}{;}
+            \PY{o}{\PYZcb{}}
+            
+            \PY{k}{if} \PY{o}{(}\PY{n}{k} \PY{o}{\PYZlt{}} \PY{n}{r} \PY{o}{|}\PY{o}{|} \PY{n}{k} \PY{o}{\PYZgt{}} \PY{n}{height} \PY{o}{\PYZhy{}} \PY{n}{r}\PY{o}{)}\PY{o}{\PYZob{}}
+              \PY{n}{vY} \PY{o}{*}\PY{o}{=} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{o}{;}
+            \PY{o}{\PYZcb{}}
+          \PY{o}{\PYZcb{}}
+          
+          \PY{k+kt}{boolean} \PY{n+nf}{colisionar}\PY{o}{(}\PY{n}{pelotaLoca} \PY{n}{P1}\PY{o}{,} \PY{n}{pelotaLoca} \PY{n}{P2}\PY{o}{)}\PY{o}{\PYZob{}}
+            \PY{k+kt}{float} \PY{n}{vXP1} \PY{o}{=} \PY{n}{P1}\PY{o}{.}\PY{n+na}{vX}\PY{o}{;}
+            \PY{k+kt}{float} \PY{n}{vYP1} \PY{o}{=} \PY{n}{P1}\PY{o}{.}\PY{n+na}{vY}\PY{o}{;}
+            \PY{k+kt}{float} \PY{n}{vXP2} \PY{o}{=} \PY{n}{P2}\PY{o}{.}\PY{n+na}{vX}\PY{o}{;}
+            \PY{k+kt}{float} \PY{n}{vYP2} \PY{o}{=} \PY{n}{P2}\PY{o}{.}\PY{n+na}{vY}\PY{o}{;}
+            
+            \PY{k}{if} \PY{o}{(}\PY{n}{dist}\PY{o}{(}\PY{n}{P1}\PY{o}{.}\PY{n+na}{h}\PY{o}{,} \PY{n}{P1}\PY{o}{.}\PY{n+na}{k}\PY{o}{,} \PY{n}{P2}\PY{o}{.}\PY{n+na}{h}\PY{o}{,} \PY{n}{P2}\PY{o}{.}\PY{n+na}{k}\PY{o}{)} \PY{o}{\PYZlt{}} \PY{n}{P1}\PY{o}{.}\PY{n+na}{r} \PY{o}{+} \PY{n}{P2}\PY{o}{.}\PY{n+na}{r}\PY{o}{)}\PY{o}{\PYZob{}}
+              \PY{n}{P1}\PY{o}{.}\PY{n+na}{vX} \PY{o}{=} \PY{n}{vXP2}\PY{o}{;}
+              \PY{n}{P1}\PY{o}{.}\PY{n+na}{vY} \PY{o}{=} \PY{n}{vYP2}\PY{o}{;}
+              \PY{n}{P2}\PY{o}{.}\PY{n+na}{vX} \PY{o}{=} \PY{n}{vXP1}\PY{o}{;}
+              \PY{n}{P2}\PY{o}{.}\PY{n+na}{vY} \PY{o}{=} \PY{n}{vYP1}\PY{o}{;}
+              \PY{k}{return} \PY{k+kc}{true}\PY{o}{;}
+            \PY{o}{\PYZcb{}}\PY{k}{else}\PY{o}{\PYZob{}}
+              \PY{k}{return} \PY{k+kc}{false}\PY{o}{;}
+            \PY{o}{\PYZcb{}}
+          \PY{o}{\PYZcb{}}
+        \PY{o}{\PYZcb{}}
+\end{Verbatim}
+
+
+    
+    \begin{verbatim}
+<IPython.core.display.Javascript object>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<IPython.core.display.HTML object>
+    \end{verbatim}
+
+    
+    \hypertarget{ejercicio-2}{%
+\paragraph{Ejercicio 2}\label{ejercicio-2}}
+
+Modifica el sketch anterior de tal forma que cuando dos pelotas locas
+colisionen aparezca una nueva y si quieres retarte modifica otra versión
+del mismo sketch para que cuando dos pelotas locas colisionen se
+eliminen y aparezca una nueva con radio igual a la suma de los radios de
+las que colicionaron, la nueva pelota loca debería aparecer en la
+posición de la colisión.
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
