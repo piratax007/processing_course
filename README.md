@@ -68,18 +68,6 @@ Programar te exigirá utilizar tu cerebro al máximo y debes estar dispuesto a i
 
 En esta lección conocerás el IDE de processing y aprenderás a dibujar usando el sistema de coordenadas así como los diferentes modelos de color que puedes utilizar en processing. Aprovecha para darte una pasada por [la referencia de processing][15] y aprender cómo esta organizada la documentación. Saber leer la documentación es fundamental ya que te permitirá conocer el lenguaje con el que estás desarrollando y encontrar fácilmente las herramientas que estas buscando para tus sketch.
 
-#### El Teorema de los cuatro colores
-
-Dado un mapa - grafo - ¿cuántos colores necesitas mínimo para colorear todo el mapa - grafo - sin que dos regiones adyacentes tengan el mismo color?
-
-Ahora que has aprendido cómo dibujar con processing lee atentemante [este artículo][14] sobre el teorema de los cuatro colores. Para hacerte una idea más clara sobre la misión que tienes por delante. Resuelve [aquí][16] el mapa de Martín Gardner y después crea en processing el mapa más complejo que se te ocurra, el tamaño lo decides tu así como el número de regiones que utilizarás y la forma de estas regiones.
-
-Revisa este ejemplo:
-
-![Sarah Suárez](./images/Mapas/Sarah_Suarez.jpg)
-
-Comparte siempre tus resultados con @BrainOnTube en Twitter para recibir tus medallas de reconocimiento.
-
 ### [Dirígete a la lección 2 - Variables][17]
 
 En este lección aprenderás acerca de la manipulación de variables ¿qué son? ¿cómo se crean? ¿qué tipos de variables existen? y también aprenderás a interactuar con tus sketch mediante el teclado y el mouse.
