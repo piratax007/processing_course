@@ -1,0 +1,13 @@
+﻿\begin{tikzpicture}[line width = 1.125pt, >= stealth]
+	\begin{scope}[gray, line width = 1pt]
+		\draw[gray, ->] (-2.5, 2.5) -- (2.5, 2.5) node[right] {$x$};
+		\draw[gray, ->] (-2.5, 2.5) -- (-2.5, -2.5) node[below] {$y$};
+		\draw[gray, dashed] (-2.5, 0) -- (2.5, 0);
+		\draw[gray, ->] (.5, 0) arc[radius = .5, start angle = 0, end angle = 50];
+		\node[gray] at (20:.7cm) {$\alpha$};
+	\end{scope}
+	\coordinate[label = below:\textcolor{magenta}{$\left(\frac{\text{width}}{2}, \frac{\text{height}}{2}\right)$}] (C) at (0, 0);
+	\coordinate[label = right:\textcolor{magenta}{$\left(\frac{\text{width}}{2} + (r - 10) \times \cos(\alpha), \frac{\text{height}}{2} + (r - 10)\times \sin (\alpha)\right)$}] (A) at ({1.8 * cos(50)}, {1.8 * sin(50)});
+	\draw (0, 0) circle[radius = 2cm];
+	\draw (0, 0) -- (A);
+\end{tikzpicture}

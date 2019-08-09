@@ -1,0 +1,19 @@
+﻿\begin{tikzpicture}[line width = 1.125pt, >=stealth]
+	\def\angle{50};
+	\coordinate[label = below left:$O$] (O) at (0, 0);
+	\coordinate[label = right:$P(\textcolor{cyan!75!gray}{\cos \alpha}; \textcolor{magenta!75!gray}{\sin \alpha})$] (P) at (\angle:2);
+	\coordinate (cos) at ({2 * cos(\angle)}, 0);
+	\coordinate (sin) at ({2 * cos(\angle)}, {2 * sin(\angle)});
+
+	\begin{scope}[line width = .9pt, gray!75]
+		\draw[->] (-2.5, 0) -- (2.5, 0) node[right] {$x$};
+		\draw[->] (0, -2.5) -- (0, 2.5) node[above] {$y$};
+		\draw[dashed] (O) circle[radius = 2cm];
+	\end{scope}
+
+	\draw (O) -- (P);
+	\draw[cyan!75!gray] (O) -- (cos);
+	\draw[magenta!75!gray] (cos) -- (sin);
+	\draw[->] (.5, 0) arc[radius = .5, start angle = 0, end angle = \angle];
+	\node at (25:.7) {$\alpha$};
+\end{tikzpicture}
