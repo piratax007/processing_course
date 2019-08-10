@@ -140,11 +140,11 @@ Adicional a los contenidos aquí presentados, puedes consultar los siguientes re
 [10]: https://processing.org/download/
 [11]: https://es.wikipedia.org/wiki/Sistema_operativo
 [12]: http://avatarmaker.com/
-[13]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/0fac0d6e695c329407f20267b7e0c131727983f1/Leccion_1.ipynb
+[13]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/master/Leccion_1.ipynb
 [14]: https://es.wikipedia.org/wiki/Teorema_de_los_cuatro_colores
 [15]: https://processing.org/reference/
 [16]: https://www.geogebra.org/m/NQnmR3CK
-[17]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/452057650f59b9076036dd4795ad724361c39961/Leccion_2.ipynb
+[17]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/master/Leccion_2.ipynb
 [18]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/969a5caab4890da58326819c36d3e99862147d1a/Leccion_3.ipynb
 [19]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/demo_juego_1.mkv?raw=true
 [20]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/4a0287a793b7f76c4092d4755669ec1754502af1/Leccion_4.ipynb
