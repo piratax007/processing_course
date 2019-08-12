@@ -75,15 +75,6 @@ En este lección aprenderás acerca de la manipulación de variables ¿qué son?
 ### [Dirígete a la lección 3 - Condicionales][18]
 En esta lección aprenderás cómo hacer para que tus sketch tomen decisiones mediante el uso de declaraciones y operadores condicionales `if` y variables booleanas.
 
-#### Misión Rebota
-Tu misión será desarrollar tu primer juego. En este juego una esfera empezará a moverse en una dirección aleatoria por el tablero y cada vez que toque alguno de los bordes del lienzo el `Background` cambiará a color rojo, la finalidad del juego será no permitir que la elipse toque los bordes del lienzo para lo cual el jugador tendrá que dar click dentro de la elipse (_te será útil determinar la distancia entre el puntero del mouse y el centro de la elipse, busca en la referencia de processing la función `dist()`_) para que esta cambie la dirección del movimiento de forma aleatoria y a una velocidad también aleatoria.
-
-En [este vídeo][19] puedes ver una demostración de cómo debe funcionar tu juego.
-
-Después de que resuelvas tu misión puedes comparar tu código con [este ejemplo][22], recuerda que a programar se aprende "leyendo mucho código y escribiendo mucho código" tal como dice [Richard Stallman][23].
-
-Has un vídeo de juego y súbelo a Twitter para que @BrainOnTube reconozca tu avance.
-
 ### [Dirígete a la lección 4 - bucles][20]
 
 En esta lección aprenderás a hacer más eficiente tu código mediante el uso de bucles, ya no tendrás que escribir muchas veces la misma línea de código cambiando apenas algunos parámetros, con los bucles vas a reducir la cantidad de código que escribes así será más legible para otros, porque estará mejor organizado y optimizado.
@@ -145,7 +136,7 @@ Adicional a los contenidos aquí presentados, puedes consultar los siguientes re
 [15]: https://processing.org/reference/
 [16]: https://www.geogebra.org/m/NQnmR3CK
 [17]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/master/Leccion_2.ipynb
-[18]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/969a5caab4890da58326819c36d3e99862147d1a/Leccion_3.ipynb
+[18]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/d8cbf154900407a6e8ce2411c2f7e899bd303cc4/Leccion_3.ipynb
 [19]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/demo_juego_1.mkv?raw=true
 [20]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/4a0287a793b7f76c4092d4755669ec1754502af1/Leccion_4.ipynb
 [21]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/2ba045e65743e38170c6c36f4993ac4eb0b059dc/Leccion_5.ipynb
