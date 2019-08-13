@@ -136,7 +136,7 @@ Adicional a los contenidos aquí presentados, puedes consultar los siguientes re
 [15]: https://processing.org/reference/
 [16]: https://www.geogebra.org/m/NQnmR3CK
 [17]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/master/Leccion_2.ipynb
-[18]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/d8cbf154900407a6e8ce2411c2f7e899bd303cc4/Leccion_3.ipynb
+[18]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/63477cac0df14a4d0612a197fc07d4da5ba321dd/Leccion_3.ipynb
 [19]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/demo_juego_1.mkv?raw=true
 [20]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/4a0287a793b7f76c4092d4755669ec1754502af1/Leccion_4.ipynb
 [21]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/2ba045e65743e38170c6c36f4993ac4eb0b059dc/Leccion_5.ipynb
