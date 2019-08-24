@@ -79,16 +79,6 @@ En esta lección aprenderás cómo hacer para que tus sketch tomen decisiones me
 
 En esta lección aprenderás a hacer más eficiente tu código mediante el uso de bucles, ya no tendrás que escribir muchas veces la misma línea de código cambiando apenas algunos parámetros, con los bucles vas a reducir la cantidad de código que escribes así será más legible para otros, porque estará mejor organizado y optimizado.
 
-#### Misión color
-
-Tu misión será desarrollar una cuadrícula con degradado tal como la siguiente.
-
-![Degradado en cuadrícula](./images/Degradado.jpg)
-
-Puedes mejorar tu sketch si haces que se trate de un sketch dinámico donde el centro del color sea la posición del puntero del mouse y además utilizas diversos colores.
-
-Comparte tus resultados con @BrainOnTube.
-
 ### [Dirigete a la lección 5][21]
 
 Ya te estas convirtiendo en un hábil desarrollador de código, ahora debes aprender cómo hacer aún más eficiente y organizado tu código, para eso en esta lección te introduciremos a la _ingeniería del software_ mediante cuatro conceptos fundamentales
@@ -138,7 +128,7 @@ Adicional a los contenidos aquí presentados, puedes consultar los siguientes re
 [17]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/master/Leccion_2.ipynb
 [18]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/6a826970b8edf1cbf0731a6ddfe12c28e0c59785/Leccion_3.ipynb
 [19]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/demo_juego_1.mkv?raw=true
-[20]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/4a0287a793b7f76c4092d4755669ec1754502af1/Leccion_4.ipynb
+[20]: https://nbviewer.jupyter.org/github/piratax007/processing_course/blob/f9fe3adf1b1dc35c54c5295b344800fb152ea89c/Leccion_4.ipynb
 [21]: http://nbviewer.jupyter.org/github/piratax007/processing_course/blob/2ba045e65743e38170c6c36f4993ac4eb0b059dc/Leccion_5.ipynb
 [22]: https://github.com/piratax007/processing_course/blob/master/Ejemplos/rebota/rebota.pde
 [23]: https://en.wikipedia.org/wiki/Richard_Stallman
