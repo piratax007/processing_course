@@ -87,7 +87,7 @@ Ya te estas convirtiendo en un hábil desarrollador de código, ahora debes apre
 3. Modularidad
 4. Reuso
 
-No te asustes, que no se trata de que de conviertas en un ingeniero de software solo de que aprendas a hacer buen código.
+No te asustes, que no se trata de que te conviertas en un ingeniero de software solo de que aprendas a hacer buen código.
 
 ### [Dirigete a la lección 6][24]
 
